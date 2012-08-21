@@ -243,7 +243,7 @@ void logpipe_error_cb(int type, const char *error_filename, const uint error_lin
 	if ((INI_INT("logpipe.mode") > 0) && (INI_INT("error_reporting") & type) || (type & E_CORE)) {
 	
 		// variables defined on the $_SERVER array
-		zval  **server_vars;
+		zval **server_vars;
 		// value of a specific $_SERVER variable item
 		zval **server_var_value;
 		
