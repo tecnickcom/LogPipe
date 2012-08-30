@@ -24,7 +24,7 @@
 #ifndef PHP_LOGPIPE_H
 #define PHP_LOGPIPE_H
 
-#define LOGPIPE_VERSION    "1.0"
+#define LOGPIPE_VERSION    "1.2.0"
 
 extern zend_module_entry logpipe_module_entry;
 #define phpext_logpipe_ptr &logpipe_module_entry

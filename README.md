@@ -3,9 +3,9 @@ LogPipe for PHP - README
 
 + Name: LogPipe for PHP
 
-+ Version: 1.1.0
++ Version: 1.2.0
 
-+ Release date: 2012-08-21
++ Release date: 2012-08-30
 
 + Author: Nicola Asuni
 
@@ -138,7 +138,7 @@ INSTALL SERVERUSAGE SERVER:
 
 As root install the LogPipe RPM file:
 
-	# rpm -i logpipe-1.1.0-1.el6.$(uname -m).rpm 
+	# rpm -i logpipe-1.2.0-1.el6.$(uname -m).rpm 
 	
 Configure the LogPipe
 

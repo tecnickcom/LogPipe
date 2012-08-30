@@ -1,7 +1,7 @@
 %define release 1
 
 Name:           logpipe
-Version:        1.1.0
+Version:        1.2.0
 Release:        %{release}%{?dist}
 Summary:        LogPipe is a PHP module to extend the default PHP error handling function.
 
