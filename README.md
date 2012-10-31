@@ -31,41 +31,41 @@ Before you start, make sure you have php-devel package installed in your system.
 
 1. get the source code:
 
- cd ~
- git clone git://github.com/fubralimited/LogPipe.git
+  cd ~
+  git clone git://github.com/fubralimited/LogPipe.git
 
 2. compile the module:
 
- cd ~/LogPipe 
- phpize 
- ./configure --enable-logpipe 
- make 
+  cd ~/LogPipe 
+  phpize 
+  ./configure --enable-logpipe 
+  make 
 
 3. copy the module on the PHP module directory:
 
- cp ./modules/logpipe.so /usr/lib64/php/modules/ 
+  cp ./modules/logpipe.so /usr/lib64/php/modules/ 
 
 4. copy and edit the configuration INI file:
 
- cp logpipe.ini /etc/php.d/ 
- vi /etc/php.d/logpipe.ini 
+  cp logpipe.ini /etc/php.d/ 
+  vi /etc/php.d/logpipe.ini 
 	
 	Configuration examples:
 	
- ; MODULE DISABLED
- extension=/usr/lib64/php/modules/logpipe.so 
- logpipe.mode=0 
- logpipe.command="" 
- 
- ; SYSLOG
- extension=/usr/lib64/php/modules/logpipe.so 
- logpipe.mode=1 
- logpipe.command="local4" 
- 
- ; TCPWEBLOG (check the LogPipe documentation for the correct parameters)
- extension=/usr/lib64/php/modules/logpipe.so 
- logpipe.mode=2 
- logpipe.command="/usr/bin/tcpweblog_client.bin 10.0.2.15 9940 /var/log/tcpweblog_cache.log 8 1 - -" 
+  ; MODULE DISABLED
+  extension=/usr/lib64/php/modules/logpipe.so 
+  logpipe.mode=0 
+  logpipe.command="" 
+  
+  ; SYSLOG
+  extension=/usr/lib64/php/modules/logpipe.so 
+  logpipe.mode=1 
+  logpipe.command="local4" 
+  
+  ; TCPWEBLOG (check the LogPipe documentation for the correct parameters)
+  extension=/usr/lib64/php/modules/logpipe.so 
+  logpipe.mode=2 
+  logpipe.command="/usr/bin/tcpweblog_client.bin 10.0.2.15 9940 /var/log/tcpweblog_cache.log 8 1 - -" 
 
 5. Restart syslog-ng and Apache server: 
 
@@ -114,7 +114,7 @@ The rpmdev-setuptree program will create the ~/rpmbuild directory and a set of s
 
 Download the LogPipe sources:
 
-	$ cd ~
+  $ cd ~
 	$ git clone git://github.com/fubralimited/LogPipe.git
 
 Copy the SPEC files and source files to rpmbuild dir:
