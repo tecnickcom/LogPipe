@@ -56,21 +56,25 @@ Before you start, make sure you have php-devel package installed in your system.
         extension=/usr/lib64/php/modules/logpipe.so 
         logpipe.mode=0 
         logpipe.command="" 
-        
+
         ; SYSLOG
         extension=/usr/lib64/php/modules/logpipe.so 
         logpipe.mode=1 
         logpipe.command="local4" 
-        
+
         ; TCPWEBLOG (check the LogPipe documentation for the correct parameters)
         extension=/usr/lib64/php/modules/logpipe.so 
         logpipe.mode=2 
-        logpipe.command="/usr/bin/tcpweblog_client.bin 10.0.2.15 9940 /var/log/tcpweblog_cache.log 8 1 - -" 
+        logpipe.command="/usr/bin/tcpweblog_client.bin 10.0.2.15 9940 /var/log/tcpweblog_cache.log php.log 1 - -"  
 
-5. Restart syslog-ng and Apache server: 
+5. Restart syslog-ng (only if you are using the syslog mode): 
 
         service syslog-ng restart 
+
+6. Restart Apache:
+
         apachectl restart 
+
 
 HOW-TO CREATE LogPipe RPMs
 ------------------------------
