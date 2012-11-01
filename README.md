@@ -50,19 +50,23 @@ Before you start, make sure you have php-devel package installed in your system.
         cp logpipe.ini /etc/php.d/ 
         vi /etc/php.d/logpipe.ini 
 
- Configuration examples (use just one of the following):
+ Configuration examples:
+
+ disable the module:
 
         ; MODULE DISABLED
         extension=/usr/lib64/php/modules/logpipe.so 
         logpipe.mode=0 
         logpipe.command="" 
 
+ send logs to syslog:
 
         ; SYSLOG
         extension=/usr/lib64/php/modules/logpipe.so 
         logpipe.mode=1 
         logpipe.command="local4" 
 
+ send logs to TCPWebLog:
 
         ; TCPWEBLOG (check the LogPipe documentation for the correct parameters)
         extension=/usr/lib64/php/modules/logpipe.so 
