@@ -46,7 +46,7 @@ PATHCONFIG=$(DESTDIR)/etc/php.d/
 
 # --- TARGETS ---
 
-# COMPILE THE TCP RECEIVER
+# COMPILE
 all:
 	phpize
 	./configure --enable-logpipe

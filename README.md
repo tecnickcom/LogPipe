@@ -143,7 +143,7 @@ Create the RPMs:
 The RPMs are now located at ~/rpmbuild/RPMS/$(uname -m)
 
 
-INSTALL SERVERUSAGE SERVER:
+INSTALL LOGPIPE RPM:
 ---------------------------
 
 As root install the LogPipe RPM file:
